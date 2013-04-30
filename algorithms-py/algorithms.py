@@ -36,6 +36,8 @@ def numOfWays(dices, max_dice_value, base_sum):
 
 def main():  
     
+    print("test")
+    
     dicesCount = 3  
     maxDiceValue = 6
     
