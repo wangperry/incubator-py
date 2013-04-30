@@ -1,10 +1,7 @@
    
 from functools import lru_cache
-import sys
-#sys.setrecursionlimit(1000000)
-from utils.array_utils import array_sum
 
-
+from geolocation.geo_utils import *
 
 @lru_cache(maxsize = None)
 def numOfWays(dices, max_dice_value, base_sum):  
@@ -34,38 +31,44 @@ def numOfWays(dices, max_dice_value, base_sum):
 
 
 
+
+
+
 def main():  
     
-    print("test")
+    aalborg = City("Aalborg, Denmark", +57.09700, +9.85000)
     
-    dicesCount = 3  
-    maxDiceValue = 6
+    print(aalborg)
     
     
-    for sumToCheck in range(dicesCount, dicesCount*maxDiceValue + 1):      
-    
-        actualCount = numOfWays(dicesCount, maxDiceValue, sumToCheck)   
-        
-        expectedCount = 0
-        dices = [1,1,1]
-        
-        for val1 in range(1, 7):
-            for val2 in range(1, 7):
-                for val3 in range(1, 7):
-#                    for val4 in range(1, 7):
-                    dices[0] = val1
-                    dices[1] = val2  
-                    dices[2] = val3  
-#                        dices[3] = val4  
-                     
-                    if array_sum(dices) == sumToCheck:
-    #                    print( dices )     
-                        expectedCount += 1 
-         
-
-        if actualCount != expectedCount:  
-            print("NOT MATCHED: No of ways (%s) =  %s with '%s' dices"  % (sumToCheck, actualCount, dicesCount)  )  
-            print( "Actual count: %s"  % (expectedCount)  )
+#    dicesCount = 3  
+#    maxDiceValue = 6
+#    
+#    
+#    for sumToCheck in range(dicesCount, dicesCount*maxDiceValue + 1):      
+#    
+#        actualCount = numOfWays(dicesCount, maxDiceValue, sumToCheck)   
+#        
+#        expectedCount = 0
+#        dices = [1,1,1]
+#        
+#        for val1 in range(1, 7):
+#            for val2 in range(1, 7):
+#                for val3 in range(1, 7):
+##                    for val4 in range(1, 7):
+#                    dices[0] = val1
+#                    dices[1] = val2  
+#                    dices[2] = val3  
+##                        dices[3] = val4  
+#                     
+#                    if array_sum(dices) == sumToCheck:
+#    #                    print( dices )     
+#                        expectedCount += 1 
+#         
+#
+#        if actualCount != expectedCount:  
+#            print("NOT MATCHED: No of ways (%s) =  %s with '%s' dices"  % (sumToCheck, actualCount, dicesCount)  )  
+#            print( "Actual count: %s"  % (expectedCount)  )
              
     print("main done")
 
