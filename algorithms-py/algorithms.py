@@ -2,18 +2,20 @@
 
 
 
-from backtrack.phone_dictionary import findPossibleWords
-
+from domain.user import *
         
     
 
 def main():  
     
+    dic  = {}
     
-    res = findPossibleWords( [6,5,3,7,4,2] )
+    user =  User("Maksym", "Stepanenko", 28)
     
-    for value in res:
-        print( value )
+    dic[user] = "first user"
+    
+    for key, value in dic.items():
+        print( "key = '%s', value = '%s'" % (key, value) )
     
     
     print("main done")
