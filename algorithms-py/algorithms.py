@@ -1,18 +1,15 @@
 
-from ds.graph import Graph
+import win32api, win32con
+
+def click(x,y):
+    win32api.SetCursorPos((x,y))
+    win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,x,y,0,0)
+    win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,x,y,0,0)
 
 def main():
     
-    graph = Graph()
-    
-    graph.add(1, 2, 12)
-    graph.add(1, 3, 13)
-    graph.add(3, 1, 31)
-    
-    for comp in graph.connected_component():
-        print( comp ) 
-    
-    print( graph )        
+
+    click(10, 10)
     
     print("main done")
     
