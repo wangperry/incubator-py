@@ -23,11 +23,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="algorithms.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="algorithms.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algorithms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="410" selection-end="410" vertical-scroll-proportion="0.5811966" vertical-offset="0" max-vertical-offset="714">
+            <state line="24" column="0" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="priority_queue.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ds/priority_queue.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="142" column="24" selection-start="3973" selection-end="3973" vertical-scroll-proportion="4.1909723" vertical-offset="0" max-vertical-offset="2686">
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,6 +56,7 @@
         <option value="$USER_HOME$/.PyCharm30/system/python_stubs/-579300275/__builtin__.py" />
         <option value="$PROJECT_DIR$/ds/bstree.py" />
         <option value="$PROJECT_DIR$/algorithms.py" />
+        <option value="$PROJECT_DIR$/ds/priority_queue.py" />
       </list>
     </option>
   </component>
@@ -80,7 +92,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -99,8 +110,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms-py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms-py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -112,7 +138,7 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.algorithms">
+  <component name="RunManager" selected="Python tests.Unittests in priority_queue">
     <configuration default="false" name="Unittests in bstree" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -156,6 +182,30 @@
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in priority_queue" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ds" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="algorithms-py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ds/priority_queue.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -280,14 +330,16 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in bstree" />
       <item index="1" class="java.lang.String" itemvalue="Python.algorithms" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in priority_queue" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.algorithms" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in bstree" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in priority_queue" />
+        <item index="1" class="java.lang.String" itemvalue="Python.algorithms" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in bstree" />
       </list>
     </recent_temporary>
   </component>
@@ -308,11 +360,11 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20595238" sideWeight="0.81431764" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20595238" sideWeight="0.67337805" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36800894" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18568233" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32662192" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -337,18 +389,21 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ds/bstree.py">
+    <entry file="file://$PROJECT_DIR$/algorithms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="12" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="6647">
+        <state line="24" column="0" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ds/bstree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="12" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="6647">
-          <folding />
-        </state>
+        <state line="87" column="12" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="6647" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds/bstree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="12" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="6647" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/predicate/predicate.py">
@@ -373,15 +428,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ds/bstree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="12" selection-start="1992" selection-end="1992" vertical-scroll-proportion="1.233871" vertical-offset="408" max-vertical-offset="6647">
-          <folding />
-        </state>
+        <state line="87" column="12" selection-start="1992" selection-end="1992" vertical-scroll-proportion="1.233871" vertical-offset="408" max-vertical-offset="6647" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="410" selection-end="410" vertical-scroll-proportion="0.5811966" vertical-offset="0" max-vertical-offset="714">
+        <state line="24" column="0" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds/priority_queue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="24" selection-start="3973" selection-end="3973" vertical-scroll-proportion="4.1909723" vertical-offset="0" max-vertical-offset="2686">
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
