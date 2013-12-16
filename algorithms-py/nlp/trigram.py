@@ -61,35 +61,42 @@ class Trigram:
         return total / (self.__trigram_length * other.__trigram_length)
 
 
-def detect_language(unknown, languages):
+class LanguageDetector:
 
-    max_similarity = 0.0
-    detected_language = None
+    def __init__(self):
+        self.languages = {
+            "english": Trigram("/Users/admin/repo/incubator-py/algorithms-py/nlp/languages/english.txt"),
+            "dutch": Trigram("/Users/admin/repo/incubator-py/algorithms-py/nlp/languages/dutch.txt"),
+            "finnish": Trigram("/Users/admin/repo/incubator-py/algorithms-py/nlp/languages/finnish.txt"),
+            "italian": Trigram("/Users/admin/repo/incubator-py/algorithms-py/nlp/languages/italian.txt"),
+            "spanish": Trigram("/Users/admin/repo/incubator-py/algorithms-py/nlp/languages/spanish.txt"),
+            "swedish": Trigram("/Users/admin/repo/incubator-py/algorithms-py/nlp/languages/swedish.txt")}
 
-    for language, trigram in languages.items():
-        cur_similarity = unknown.similarity(trigram)
-        if cur_similarity > max_similarity:
-            max_similarity = cur_similarity
-            detected_language = language
+    def detect_language(self, file_path):
 
-    return detected_language
+        trigram_to_detect = Trigram(file_path)
+
+        max_similarity = 0.0
+        detected_language = None
+
+        for language, trigram in self.languages.items():
+            cur_similarity = trigram_to_detect.similarity(trigram)
+            if cur_similarity > max_similarity:
+                max_similarity = cur_similarity
+                detected_language = language
+
+        return detected_language
 
 
 def main():
 
-    languages = {
-        "english": Trigram("/Users/admin/repo/incubator-py/algorithms-py/nlp/languages/english.txt"),
-        "dutch": Trigram("/Users/admin/repo/incubator-py/algorithms-py/nlp/languages/dutch.txt"),
-        "finnish": Trigram("/Users/admin/repo/incubator-py/algorithms-py/nlp/languages/finnish.txt"),
-        "italian": Trigram("/Users/admin/repo/incubator-py/algorithms-py/nlp/languages/italian.txt"),
-        "spanish": Trigram("/Users/admin/repo/incubator-py/algorithms-py/nlp/languages/spanish.txt"),
-        "swedish": Trigram("/Users/admin/repo/incubator-py/algorithms-py/nlp/languages/swedish.txt")}
+    lang_detector = LanguageDetector()
 
-    unknown1 = Trigram("/Users/admin/repo/incubator-py/algorithms-py/nlp/languages/unknown_spanish.txt")
-    unknown2 = Trigram("/Users/admin/repo/incubator-py/algorithms-py/nlp/languages/unknown_english.txt")
+    file1 = "/Users/admin/repo/incubator-py/algorithms-py/nlp/languages/unknown_spanish.txt"
+    file2 = "/Users/admin/repo/incubator-py/algorithms-py/nlp/languages/unknown_english.txt"
 
-    print "Detected language: %s" % detect_language(unknown1, languages)
-    print "Detected language: %s" % detect_language(unknown2, languages)
+    print "Detected language: %s" % lang_detector.detect_language(file1)
+    print "Detected language: %s" % lang_detector.detect_language(file2)
 
 
 if __name__ == "__main__":
