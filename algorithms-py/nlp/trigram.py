@@ -2,56 +2,67 @@ __author__ = 'admin'
 
 import math
 
+
 class Trigram:
 
-    length = 0
+    """
+    Class that represents trigrams.
+    """
 
     def __init__(self, file_path):
-        self.data = {}
-        self.parse_file(file_path)
+        self.__vector = Trigram.__create_trigrams(file_path)
+        self.__trigram_length = Trigram.__calculate_scalar_length(self.__vector)
 
-    def parse_file(self, fn):
-        pair = '  '
+    @staticmethod
+    def __create_trigrams(file_path):
+        """ Create dictionary of all trigrams from specified file path. """
+        trigram_dic = {}
 
-        with open(fn) as file_descriptor:
+        with open(file_path) as file_descriptor:
+
             for line in file_descriptor:
-                for letter in line.strip():
-                    d = self.data.setdefault(pair, {})
-                    d[letter] = d.get(letter, 0) + 1
-                    pair = pair[1] + letter
+                cleared_line = line.strip()
 
-        self.measure()
+                for i in range(0, len(cleared_line)-2):
 
+                    gram = line[i:i+3]
 
-    def measure(self):
-        """calculates the scalar length of the trigram vector and stores it in self.length."""
+                    if not gram in trigram_dic:
+                        trigram_dic[gram] = 1
+                    else:
+                        trigram_dic[gram] += 1
+
+        return trigram_dic
+
+    @staticmethod
+    def __calculate_scalar_length(vector):
+        """Calculates the scalar length of the trigram vector."""
         total = 0
-        for y in self.data.values():
-            total += sum([x * x for x in y.values()])
-        self.length = math.sqrt(total)
+        for freq in vector.values():
+            total += freq * freq
+        return math.sqrt(total)
 
     def similarity(self, other):
-        """returns a number between 0 and 1 indicating similarity.
-        1 means an identical ratio of trigrams;
-        0 means no trigrams in common.
+        """Returns a number between 0 and 1 indicating similarity.
+        1 - means an identical ratio of trigrams;
+        0 - means no trigrams in common.
         """
         if not isinstance(other, Trigram):
             raise TypeError("can't compare Trigram with non-Trigram")
-        data1 = self.data
-        data2 = other.data
-        total = 0
-        for k in data1.keys():
-            if k in data2:
-                a = data1[k]
-                b = data2[k]
-                for x in a:
-                    if x in b:
-                        total += a[x] * b[x]
 
-        return float(total) / (self.length * other.length)
+        data1 = self.__vector
+        data2 = other.__vector
+
+        total = 0.0
+        for key in data1.keys():
+            if key in data2:
+                total += data1[key] * data2[key]
+
+        return total / (self.__trigram_length * other.__trigram_length)
 
 
 def detect_language(unknown, languages):
+
     max_similarity = 0.0
     detected_language = None
 
@@ -62,6 +73,7 @@ def detect_language(unknown, languages):
             detected_language = language
 
     return detected_language
+
 
 def main():
 
