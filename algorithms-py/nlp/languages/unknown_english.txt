@@ -1,0 +1,5 @@
+After I posted this article, various people wrote versions in different programming languages.
+While the purpose of this article was to show the algorithms, not to highlight Python
+(and certainly not to play "code golf" in an attempt to find the shortest program), the other
+examples may be interesting for those who like comparing languages, or for those who want to
+borrow an implementation in their desired language.
