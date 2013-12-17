@@ -1,11 +1,11 @@
 import unittest
 from collections import deque
 
-var = '''
-Min bounded priority queue.
-'''
 
 class BoundedPriorityQueue:
+    """
+    Min bounded priority queue.
+    """
 
     MAX_QUEUE_CAPACITY = 1024
 
@@ -76,15 +76,14 @@ class BoundedPriorityQueueTest(unittest.TestCase):
 
     def testAdd(self):
         q = BoundedPriorityQueue(10)
-        self.assertTrue( q.is_empty())
-        self.assertEqual( 0, q.get_size())
+        self.assertTrue(q.is_empty())
+        self.assertEqual(0, q.get_size())
 
         with self.assertRaises(IndexError):
             q.extract_min()
 
         with self.assertRaises(IndexError):
             q.find_min()
-
 
         q.add(5, "5")
         self.assertEqual("5", q.find_min())
@@ -147,6 +146,3 @@ class BoundedPriorityQueueTest(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             q.add(-5, "-5")
-
-
-

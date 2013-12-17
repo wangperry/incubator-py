@@ -1,16 +1,13 @@
 
 
-'''
-Represent directed graph as an adjacency list.
-'''
 class Graph(object):
-
+    """
+    Represent directed graph as an adjacency list.
+    """
 
     def __init__(self):
         self.data = {}
         self.vertexes = 0
-       
-        
     
     def add(self, ver1, ver2, weight=1):
         
@@ -36,7 +33,7 @@ class Graph(object):
             
             ver = left_vertexes.iterkeys().next()
             
-            search_set = self.bfs(ver)
+            #search_set = self.bfs(ver)
             
             yield ver
                         

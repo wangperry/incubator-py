@@ -1,63 +1,57 @@
-'''
-Single linked list
-'''
+
 
 class LinkedList(object):
-
+    """
+    Single linked list
+    """
 
     def __init__(self):
         self.head = None
         self.tail = None
         self.size = 0
         
-    def getSize(self):
+    def get_size(self):
         return self.size
     
-    def isEmpty(self):
+    def is_empty(self):
         return self.size == 0
     
-    
     def push(self, value):
-        self.addLast(value)
+        self.add_last(value)
         
     def pop(self):
-        return self.removeLast()
+        return self.remove_last()
     
     def enqueue(self, value):
-        self.addLast(value)
+        self.add_last(value)
         
     def deque(self):
-        return self.removeFirst()
-    
-    
-    def removeFirst(self):
+        return self.remove_first()
+
+    def remove_first(self):
         
-        self._checkEmpty()
-        
-        retValue = None
+        self.__check_empty()
         
         if self.head == self.tail:
-            retValue = self.head.value
+            ret_value = self.head.value
             self.head = self.tail = None
         else: 
-            oldHead = self.head
-            retValue = self.head.value
+            old_head = self.head
+            ret_value = self.head.value
             
             self.head = self.head.next
-            oldHead.clear()         
+            old_head.clear()
         
         self.size -= 1
         
-        return retValue
+        return ret_value
     
-    def removeLast(self):
+    def remove_last(self):
         
-        self._checkEmpty()
-        
-        retValue = None
+        self.__check_empty()
         
         if self.head == self.tail:
-            retValue = self.head.value
+            ret_value = self.head.value
             self.head = self.tail = None
         else:    
             
@@ -67,23 +61,21 @@ class LinkedList(object):
             while cur.next != self.tail:
                 cur = cur.next
                 
-            retValue = cur.next.value
+            ret_value = cur.next.value
                 
             cur.next = None
             self.tail = cur
             
         self.size -= 1
         
-        return retValue
+        return ret_value
        
-    def _checkEmpty(self):
+    def __check_empty(self):
         if self.size == 0:
             raise ValueError("Stack is empty") 
-    
-    '''
-    Add to the end of list
-    '''
-    def addLast(self, value):
+
+    def add_last(self, value):
+        """ Add to the end of list"""
         
         if self.size == 0:
             self.head = self.tail = Node(value)
@@ -92,43 +84,39 @@ class LinkedList(object):
             self.tail = self.tail.next 
             
         self.size += 1
-        
-    '''
-    Add to the beginning of list
-    '''
-    def addFirst(self, value):
+
+    def add_first(self, value):
+        """
+        Add to the beginning of list.
+        """
         
         if self.size == 0:
             self.head = self.tail = Node(value)
         else:
-            newNode = Node(value, self.head)
-            self.head = newNode 
+            new_node = Node(value, self.head)
+            self.head = new_node
             
         self.size += 1
 
-
     def __repr__(self):
-        strBuf = ""
+        str_buf = ""
         
         cur = self.head
         
         while cur:
-            strBuf += str(cur.value) + ","
+            str_buf += str(cur.value) + ","
             cur = cur.next
             
-        return strBuf         
-    
+        return str_buf
 
     __str__ = __repr__
     
     
 class Node(object):
-    
-    
-    
-    def __init__(self, value, next = None):
+
+    def __init__(self, value, next_node=None):
         self.value = value
-        self.next = next
+        self.next = next_node
         
     def clear(self):
         self.value = None
