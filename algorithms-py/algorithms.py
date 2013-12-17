@@ -1,67 +1,16 @@
-from bisect import bisect_left
+from interview.task_11_7 import *
 
-
-def find_cut_value(arr, desired_value):
-    """
-    time: O(N*lgN + lgS*lgN)
-    space: O(N)
-    """
-    arr.sort()
-
-    sum_arr = [0 for _ in range(len(arr))]
-    sum_arr[0] = arr[0]
-
-    for i in range(1, len(sum_arr)):
-        sum_arr[i] = arr[i] + sum_arr[i-1]
-
-    if desired_value > sum_arr[-1]:
-        return None
-
-    if desired_value == sum_arr[-1]:
-        return desired_value
-
-    lo = 0
-    hi = desired_value
-
-    while lo <= hi:
-
-        mid = lo + (hi-lo)/2
-        index = bisect_left(arr, mid)
-
-        if index >= len(arr):
-            hi = mid - 1
-        else:
-            if index == 0:
-                cur_sum = mid * len(arr)
-            else:
-                greater_elements_count = len(arr) - index
-                cur_sum = sum_arr[index-1] + mid * greater_elements_count
-
-            if cur_sum == desired_value:
-                return mid
-
-            if cur_sum < desired_value:
-                lo = mid+1
-            else:
-                hi = mid-1
-
-    return None
+from interview.task_11_8 import *
 
 
 def main():
 
-    arr = [90, 30, 100, 40, 20]
+    a = [2, 4, 7, 9, 12, 13, 15, 22]
+    b = [4, 5, 6, 7, 9, 12, 17, 18]
 
-    for sum_value in range(0, 500):
-        desired_sum = sum_value
-
-        cut_value = find_cut_value(arr, desired_sum)
-
-        if cut_value is None:
-            print "No solution for sum = %s" % desired_sum
-        else:
-            arr_sum = sum([min(val, cut_value) for val in arr])
-            print "cut_value = %s, expected_sum = %s, actual_sum = %s" % (cut_value, desired_sum, arr_sum)
+    for k in range(1, len(a) + len(b) + 1):
+        order_stat = find_order_stat(a, b, k)
+        print "%s-th element: %s" % (k, order_stat)
 
     print "Main done"
 
