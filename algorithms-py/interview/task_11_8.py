@@ -6,33 +6,44 @@ Searching in two sorted arrays.
 
 
 def find_order_stat(a, b, k):
-    """
-
-    Given sorted arrays, you know that the nth largest will appear somewhere before or at A[n-1] if it is in array A,
-    or B[n-1] if it is in array B
-
-    Consider item at index a in A and item at index b in B.
-
-    Perform binary search as follows
-
-    If a + b > n, then reduce the search set
-        if A[a] > B[b] then b = b / 2, else a = a / 2
-
-    If a + b < n, then increase the search set
-        if A[a] > B[b] then b = 3/2 * b, else a = 3/2 * a (halfway between a and previous a)
-
-    If a + b = n then the nth largest is max(A[a], B[b])
-
-    """
 
     validate_params(a, b, k)
 
     if k == 1:
         return min(a[0], b[0])
 
-    #todo finish this
+    top1 = min(k-1, len(a)-1)
+    top2 = min(k-1, len(b)-1)
 
-    return None
+    off1 = (top1+1)/2
+    off2 = (top2+1)/2
+
+    count = top1+1 + top2+1
+
+    while count != k:
+
+        if count > k:
+        #decrease
+            if a[top1] > b[top2]:
+                top1 -= off1
+                off1 /= 2
+            else:
+                top2 -= off2;
+                off2 /= 2
+        else:
+        # count < k => increase
+            if a[top1] < b[top2]:
+                top1 += off1
+                off1 /= 2
+            else:
+                top2 += off2
+                off2 /= 2
+
+        count = top1+1 + top2+1
+
+
+
+    return max(a[top1], b[top2])
 
 
 def validate_params(arr1, arr2, k):

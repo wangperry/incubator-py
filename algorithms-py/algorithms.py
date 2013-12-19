@@ -9,8 +9,8 @@ def main():
     b = [4, 5, 6, 7, 9, 12, 17, 18]
 
 
-    i = 1
-    j = len(a) + len(b) + 1
+    i = 12
+    j = 13 #len(a) + len(b) + 1
 
     for k in range(i, j):
 
