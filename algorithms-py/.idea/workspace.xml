@@ -23,21 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="set_coverage.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/np_complete/set_coverage.py">
+      <file leaf-file-name="algorithms.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/algorithms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="11" selection-start="687" selection-end="687" vertical-scroll-proportion="1.1081795" vertical-offset="0" max-vertical-offset="1170">
-              <folding>
-                <element signature="e#1#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="priority_dictionary.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ds/priority_dictionary.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="0" selection-start="2130" selection-end="2130" vertical-scroll-proportion="0.0" vertical-offset="1254" max-vertical-offset="2580">
+            <state line="2" column="10" selection-start="12" selection-end="12" vertical-scroll-proportion="0.052910052" vertical-offset="0" max-vertical-offset="567">
               <folding />
             </state>
           </provider>
@@ -60,7 +49,6 @@
         <option value="$PROJECT_DIR$/interview/task_11_7.py" />
         <option value="$PROJECT_DIR$/interview/task_11_8.py" />
         <option value="$USER_HOME$/monit-5.6/bin/scripts/alert.py" />
-        <option value="$PROJECT_DIR$/algorithms.py" />
         <option value="$USER_HOME$/monit-5.6/bin/scripts/alerts_volume.py" />
         <option value="$USER_HOME$/monit-5.6/bin/scripts/patients_volume.py" />
         <option value="$PROJECT_DIR$/graph/graph.py" />
@@ -69,6 +57,7 @@
         <option value="$PROJECT_DIR$/nlp/kgrams.py" />
         <option value="$PROJECT_DIR$/ds/priority_dictionary.py" />
         <option value="$PROJECT_DIR$/np_complete/set_coverage.py" />
+        <option value="$PROJECT_DIR$/algorithms.py" />
       </list>
     </option>
   </component>
@@ -122,34 +111,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms-py" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms-py" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="np_complete" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms-py" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms-py" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ds" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -158,7 +119,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/monit-5.6/bin/scripts/patients_volume.py" />
     <property name="FullScreen" value="false" />
@@ -172,10 +133,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/win32" />
       <recent name="$PROJECT_DIR$/nlp" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in set_coverage">
+  <component name="RunManager" selected="Python.algorithms">
     <configuration default="false" name="set_coverage" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -196,100 +158,20 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in MaxPriorityDictionaryTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="algorithms" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ds" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="algorithms-py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ds/priority_dictionary.py" />
-      <option name="CLASS_NAME" value="MaxPriorityDictionaryTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_CLASS" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in priority_dictionary" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ds" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="algorithms-py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ds/priority_dictionary.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in priority_dictionary (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ds" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="algorithms-py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ds/priority_dictionary.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in set_coverage" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/np_complete" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="algorithms-py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/np_complete/set_coverage.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithms.py" />
+      <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
@@ -415,24 +297,35 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <list size="5">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.set_coverage" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in MaxPriorityDictionaryTest" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in priority_dictionary" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in priority_dictionary (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in set_coverage" />
+      <item index="1" class="java.lang.String" itemvalue="Python.algorithms" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in set_coverage" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.algorithms" />
         <item index="1" class="java.lang.String" itemvalue="Python.set_coverage" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in MaxPriorityDictionaryTest" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in priority_dictionary (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in priority_dictionary" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0a343f7c-3b3b-4ca8-b7b4-f8e0574f1285" name="Default" comment="" />
@@ -450,11 +343,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20546874" sideWeight="0.68403363" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21640626" sideWeight="0.68403363" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34957984" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3159664" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3159664" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -478,24 +371,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ds/linked_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="28" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="1995" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interview/task_11_7.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="30" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interview/task_11_8.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="14" selection-start="346" selection-end="346" vertical-scroll-proportion="0.46391752" vertical-offset="195" max-vertical-offset="1425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="9" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0" vertical-offset="393" max-vertical-offset="960" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/monit-5.6/bin/scripts/alerts_volume.py">
@@ -518,11 +396,6 @@
         <state line="17" column="32" selection-start="325" selection-end="325" vertical-scroll-proportion="0.60714287" vertical-offset="0" max-vertical-offset="765" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nlp/trigram.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="24" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1635" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nlp/languages/english.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="367" />
@@ -531,13 +404,6 @@
     <entry file="file://$PROJECT_DIR$/nlp/simple.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="48" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nlp/kgrams.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="14" selection-start="1240" selection-end="1240" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1590">
           <folding />
         </state>
       </provider>
@@ -565,10 +431,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/np_complete/set_coverage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="11" selection-start="687" selection-end="687" vertical-scroll-proportion="1.1081795" vertical-offset="0" max-vertical-offset="1170">
+        <state line="28" column="11" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
           <folding>
             <element signature="e#1#57#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nlp/kgrams.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="14" selection-start="1240" selection-end="1240" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1590">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nlp/trigram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="24" selection-start="439" selection-end="439" vertical-scroll-proportion="0.71240103" vertical-offset="0" max-vertical-offset="1635">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/win32/mouse_mover.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="567">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="10" selection-start="12" selection-end="12" vertical-scroll-proportion="0.052910052" vertical-offset="0" max-vertical-offset="567">
+          <folding />
         </state>
       </provider>
     </entry>
