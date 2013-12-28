@@ -1,6 +1,4 @@
-small class
-
-Below is a small class that implements the search. The two key methods are addDocument,
+Below     is a small class that implements the search. The two key methods are addDocument,
 which breaks down the document into trigrams and stores the frequencies against a
 language, and detect, which breaks down a document in the same way, and for each trigram
 present compares it's frequency with the test languages. Because we're dividing by the length each

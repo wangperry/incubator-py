@@ -1,23 +1,56 @@
-from interview.task_11_7 import *
 
-from interview.task_11_8 import *
+def my_sqrt(x):
+
+    if x < 0:
+        raise ValueError("")
+
+    lo = 1.0
+    hi = float(x)
+
+    while True:
+        mid = lo + (hi-lo)/2.0
+
+        val = mid*mid
+
+        if abs(val-x) < 0.0001:
+            return mid
+
+        if val > x:
+            hi = mid+1
+        else:
+            lo = mid-1
+
+
+def my_div(x, y):
+
+    approximation_step = 0.1
+    lo = approximation_step
+    hi = x*y
+
+    while True:
+        mid = lo + (hi-lo)/2.0
+
+        cur = mid*y
+
+        if cur == x:
+            return mid
+
+        if cur > x:
+            hi = mid - approximation_step
+        else:
+            lo = mid + approximation_step
+
+
 
 
 def main():
 
-    a = [2, 4, 7, 9, 12, 13, 15, 22]
-    b = [4, 5, 6, 7, 9, 12, 17, 18]
+    x = 16.0
+    y = 17.0
 
+    print x/y
 
-    i = 12
-    j = 13 #len(a) + len(b) + 1
-
-    for k in range(i, j):
-
-        order_stat1 = find_order_stat_bruteforce(a, b, k)
-        order_stat2 = find_order_stat(a, b, k)
-
-        print "%s-th, bruteforce: %s, optimal: %s" % (k,order_stat1, order_stat2)
+    print my_div(x, y)
 
     print "Main done"
 
