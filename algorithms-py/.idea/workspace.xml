@@ -23,10 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="algorithms.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/algorithms.py">
+      <file leaf-file-name="graph.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ds/graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="10" selection-start="12" selection-end="12" vertical-scroll-proportion="0.052910052" vertical-offset="0" max-vertical-offset="567">
+            <state line="176" column="0" selection-start="4627" selection-end="4627" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2790">
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="permutations.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backtrack/permutations.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="33" selection-start="570" selection-end="570" vertical-scroll-proportion="0.58201057" vertical-offset="0" max-vertical-offset="615">
               <folding />
             </state>
           </provider>
@@ -42,8 +53,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/nlp/trigram.py" />
-        <option value="$PROJECT_DIR$/ds/graph.py" />
         <option value="$PROJECT_DIR$/ds/linked_list.py" />
         <option value="$PROJECT_DIR$/ds/priority_queue.py" />
         <option value="$PROJECT_DIR$/interview/task_11_7.py" />
@@ -58,11 +67,13 @@
         <option value="$PROJECT_DIR$/ds/priority_dictionary.py" />
         <option value="$PROJECT_DIR$/np_complete/set_coverage.py" />
         <option value="$PROJECT_DIR$/algorithms.py" />
+        <option value="$PROJECT_DIR$/ds/graph.py" />
+        <option value="$PROJECT_DIR$/backtrack/permutations.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
+    <option name="x" value="-3" />
     <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="690" />
@@ -111,6 +122,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms-py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms-py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="win32" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms-py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms-py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backtrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -132,47 +171,38 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backtrack" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/win32" />
       <recent name="$PROJECT_DIR$/nlp" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.algorithms">
-    <configuration default="false" name="set_coverage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python tests.Unittest GraphTest.test_isomorphic">
+    <configuration default="false" name="Unittest GraphTest.test_isomorphic" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
+      <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/np_complete" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ds" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="algorithms-py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/np_complete/set_coverage.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ds/graph.py" />
+      <option name="CLASS_NAME" value="GraphTest" />
+      <option name="METHOD_NAME" value="test_isomorphic" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="algorithms" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="algorithms-py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithms.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -297,14 +327,12 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Python.set_coverage" />
-      <item index="1" class="java.lang.String" itemvalue="Python.algorithms" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest GraphTest.test_isomorphic" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.algorithms" />
-        <item index="1" class="java.lang.String" itemvalue="Python.set_coverage" />
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest GraphTest.test_isomorphic" />
       </list>
     </recent_temporary>
   </component>
@@ -335,7 +363,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="22" width="1280" height="690" extended-state="0" />
+    <frame x="-3" y="22" width="1280" height="690" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -343,11 +371,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21640626" sideWeight="0.68403363" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34957984" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21640626" sideWeight="0.5294118" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5277311" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3159664" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47058824" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -367,35 +395,26 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="130" />
+      <breakpoints>
+        <breakpoint enabled="true" type="python-exception">
+          <properties exception="exceptions.TypeError" />
+          <option name="timeStamp" value="143" />
+        </breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="147" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/interview/task_11_8.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="14" selection-start="346" selection-end="346" vertical-scroll-proportion="0.46391752" vertical-offset="195" max-vertical-offset="1425" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/monit-5.6/bin/scripts/alerts_volume.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="14" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0" vertical-offset="213" max-vertical-offset="780" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/monit-5.6/bin/scripts/patients_volume.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0" vertical-offset="213" max-vertical-offset="780" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/array_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.21164021" vertical-offset="120" max-vertical-offset="2190" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graph/graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="32" selection-start="325" selection-end="325" vertical-scroll-proportion="0.60714287" vertical-offset="0" max-vertical-offset="765" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nlp/languages/english.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="367" />
@@ -433,7 +452,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="11" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
           <folding>
-            <element signature="e#1#57#0" expanded="true" />
+            <element signature="e#1#57#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -461,7 +480,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="12" selection-end="12" vertical-scroll-proportion="0.052910052" vertical-offset="0" max-vertical-offset="567">
+        <state line="5" column="0" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding>
+            <marker date="1388237357000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/win32/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="329">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backtrack/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="329">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_compile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="0" selection-start="4585" selection-end="4585" vertical-scroll-proportion="0.14814815" vertical-offset="1956" max-vertical-offset="7920">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="0" selection-start="3860" selection-end="3860" vertical-scroll-proportion="0.14814815" vertical-offset="1866" max-vertical-offset="11910">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ds/graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="176" column="0" selection-start="4627" selection-end="4627" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2790">
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backtrack/permutations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="33" selection-start="570" selection-end="570" vertical-scroll-proportion="0.58201057" vertical-offset="0" max-vertical-offset="615">
           <folding />
         </state>
       </provider>
