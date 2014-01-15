@@ -25,7 +25,7 @@ class PermutationsGenerator():
 def main():
     perm = PermutationsGenerator(["A", "B", "C"])
     for single_perm in perm.get_permutations():
-        print str(single_perm)
+        print(str(single_perm))
 
 if __name__ == "__main__":
     main()
