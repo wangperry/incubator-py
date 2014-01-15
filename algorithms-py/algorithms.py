@@ -20,7 +20,7 @@ def main():
 
     print(q)
 
-    print("===========================\nMain done...\nUsed python version: %s" % platform.python_version())
+    print("===========================\nMain done... Python: %s" % platform.python_version())
 
 
 if __name__ == '__main__':
